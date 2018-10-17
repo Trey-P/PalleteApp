@@ -11,10 +11,9 @@ import android.widget.TextView;
 
 public class Backgroundsetter extends ArrayAdapter
 {
-    String mydata[];
+    String mydata[]={"White","Red","Green", "Blue","Yellow","Magenta"};
     public Backgroundsetter(@NonNull Context context, int resource, String[] objects) {
         super(context, resource, objects);
-        this.mydata=objects;
     }
     @Override
     public View getView(int position, @Nullable View convertView, @NonNull ViewGroup parent) {
