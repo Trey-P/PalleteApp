@@ -19,9 +19,11 @@ public class Backgroundsetter extends ArrayAdapter
     public View getView(int position, @Nullable View convertView, @NonNull ViewGroup parent) {
         TextView textView = (TextView) super.getView(position,convertView,parent);
         textView.setBackgroundColor(Color.parseColor(mydata[position]));
+        textView.setText(mydata[position]);
         return super.getView(position, convertView, parent);
 
     }
+    /*
     @Override //Spinner will use this in its Drop down state. While the User is selecting an item
     public View getDropDownView(int position, View convertView, ViewGroup parent) {
         TextView v =(TextView) getView(position,convertView,parent);
@@ -29,4 +31,5 @@ public class Backgroundsetter extends ArrayAdapter
         v.setBackgroundColor(Color.parseColor(mydata[position]));
         return v;
     }
+   */
 }
